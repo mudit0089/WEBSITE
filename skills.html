@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills Showcase | Mudit's Arsenal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  <style>
+    .skill-meter {
+      background-color: #e5e7eb;
+      border-radius: 9999px;
+      overflow: hidden;
+      position: relative;
+    }
+    .skill-progress {
+      background-color: #fbbf24;
+      height: 100%;
+      border-radius: 9999px;
+      transition: width 0.3s ease;
+    }
+    .floating-icon {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-black overflow-x-hidden">
+
+<!-- Epic Top Banner -->
+<div class="w-full bg-black text-yellow-400 overflow-hidden">
+  <marquee behavior="scroll" direction="left" scrollamount="4" style="font-family: 'Consolas', 'Courier New', monospace; font-size: 3rem; font-weight: 900; letter-spacing: 4px; padding: 15px 0;">
+    ⚡ SKILL SHOWCASE ⚡ SEO SYSTEMS ACTIVATED 🔥 RANKING OPTIMIZER 📈 DATA STORYTELLER 📊
+  </marquee>
+</div>
+
+<!-- Main Content -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-8">
+  
+  <!-- Navigation Bar -->
+  <nav class="mb-8">
+    <div class="neo-brutalist bg-black text-yellow-400 p-4 rounded-xl">      <ul class="flex flex-wrap justify-center gap-4 md:gap-6 font-bebas text-xl md:text-2xl">
+        <li><a href="home.html" class="neo-brutalist bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105 hover:rotate-1">HOME</a></li>
+        <li><a href="about.html" class="neo-brutalist bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-rotate-1">ABOUT</a></li>
+        <li><a href="skills.html" class="neo-brutalist bg-white text-black px-4 py-2 rounded-lg border-4 border-black shadow-lg transform scale-105">SKILLS</a></li>
+        <li><a href="projects.html" class="neo-brutalist bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105 hover:rotate-1">PROJECTS</a></li>
+        <li><a href="contact.html" class="neo-brutalist bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-white transition-all duration-300 transform hover:scale-105 hover:-rotate-1">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="neo-brutalist bg-gradient-to-r from-purple-400 via-pink-400 to-yellow-400 p-8 rounded-xl mb-8 relative overflow-hidden">
+    <div class="relative z-10 text-center">
+      <h1 class="text-6xl md:text-8xl font-bebas text-black mb-4 transform -rotate-2">SKILL ARSENAL</h1>
+      <p class="text-2xl font-mono font-bold text-black">Loading SEO + analytics capabilities... 100% complete! 🚀</p>
+    </div>
+    <!-- Floating Tech Icons -->
+    <div class="absolute top-4 left-4 text-5xl floating-icon">💻</div>
+    <div class="absolute top-4 right-4 text-5xl floating-icon" style="animation-delay: 0.5s;">📱</div>
+    <div class="absolute bottom-4 left-1/2 text-5xl floating-icon" style="animation-delay: 1s;">⚡</div>
+  </section>
+
+  <!-- Skill Categories -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+    
+    <!-- SEO Skills -->
+    <div class="neo-brutalist bg-blue-200 p-6 rounded-xl transform hover:scale-105 transition-transform duration-300">
+      <h2 class="text-4xl font-bebas text-black mb-6 flex items-center">
+        <span class="text-5xl mr-3">🎯</span>
+        SEO MAGIC
+      </h2>
+      
+      <div class="space-y-4">
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">Keyword Research</span>
+            <span class="font-mono">75%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 75%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Can turn high-intent keywords into ranking opportunities.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">On-Page SEO</span>
+            <span class="font-mono">70%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 70%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Optimizing titles, headings, and internal linking with intent in mind.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">Technical SEO</span>
+            <span class="font-mono">60%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 60%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Crawlability, indexation, and page quality checks with clear action plans.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">Content Optimization</span>
+            <span class="font-mono">65%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 65%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Entity-focused briefs and updates that improve relevance and CTR.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics Skills -->
+    <div class="neo-brutalist bg-green-200 p-6 rounded-xl transform hover:scale-105 transition-transform duration-300">
+      <h2 class="text-4xl font-bebas text-black mb-6 flex items-center">
+        <span class="text-5xl mr-3">📊</span>
+        ANALYTICS POWERS
+      </h2>
+      
+      <div class="space-y-4">
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">GA4 Analytics</span>
+            <span class="font-mono">55%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 55%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Event-level tracking and traffic analysis for smarter decisions.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">Google Search Console</span>
+            <span class="font-mono">50%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 50%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Query, page, and CTR insights mapped to ranking opportunities.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">Excel / Google Sheets</span>
+            <span class="font-mono">45%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 45%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Data cleanup, segmentation, trend spotting, and quick KPI analysis.</p>
+        </div>
+        
+        <div class="neo-brutalist bg-white p-4 rounded-lg">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-lg">SQL Basics</span>
+            <span class="font-mono">40%</span>
+          </div>
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 40%;"></div>
+          </div>
+          <p class="text-sm font-mono mt-2">Pulling actionable insights from marketing and performance datasets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tools & Technologies -->
+  <section class="neo-brutalist bg-yellow-200 p-8 rounded-xl mb-8">
+    <h2 class="text-5xl font-bebas text-center text-black mb-8">SEO TOOLBOX</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-blue-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">🆚</div>
+        <h3 class="font-bold">VS Code</h3>
+        <p class="text-sm font-mono">My workflow headquarters</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-orange-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">🐙</div>
+        <h3 class="font-bold">Git/GitHub</h3>
+        <p class="text-sm font-mono">Experiment tracking and documentation</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-purple-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">📊</div>
+        <h3 class="font-bold">Google Analytics</h3>
+        <p class="text-sm font-mono">Advanced tracking and user behavior analysis</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-green-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">📈</div>
+        <h3 class="font-bold">Power BI</h3>
+        <p class="text-sm font-mono">Data visualization and business intelligence</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-red-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">🗄️</div>
+        <h3 class="font-bold">SQL Server</h3>
+        <p class="text-sm font-mono">Database management and query optimization</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center hover:bg-pink-100 transition-colors duration-300">
+        <div class="text-4xl mb-2">📓</div>
+        <h3 class="font-bold">Ipython Notebook</h3>
+        <p class="text-sm font-mono">Reporting and insight storytelling</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Skills -->
+  <section class="neo-brutalist bg-pink-200 p-8 rounded-xl mb-8">
+    <h2 class="text-5xl font-bebas text-center text-black mb-8">SOFT SKILLS UNLOCKED</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="neo-brutalist bg-white p-6 rounded-lg text-center transform hover:rotate-3 transition-transform duration-300">
+        <div class="text-6xl mb-4">🧠</div>
+        <h3 class="text-2xl font-bebas mb-3">PROBLEM SOLVING</h3>
+        <p class="font-mono">Can solve growth problems with SEO + data logic!</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-6 rounded-lg text-center transform hover:-rotate-3 transition-transform duration-300">
+        <div class="text-6xl mb-4">🎭</div>
+        <h3 class="text-2xl font-bebas mb-3">CREATIVITY</h3>
+        <p class="font-mono">Turning raw data into clear growth stories!</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-6 rounded-lg text-center transform hover:rotate-3 transition-transform duration-300">
+        <div class="text-6xl mb-4">🤝</div>
+        <h3 class="text-2xl font-bebas mb-3">TEAMWORK</h3>
+        <p class="font-mono">Can collaborate even in group projects!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learning Path -->
+  <section class="neo-brutalist bg-purple-200 p-8 rounded-xl mb-8">
+    <h2 class="text-5xl font-bebas text-center text-black mb-8">CURRENTLY LEVELING UP</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <div class="neo-brutalist bg-white p-6 rounded-lg">
+        <h3 class="text-3xl font-bebas text-black mb-4 flex items-center">
+          <span class="text-4xl mr-3">⚛️</span>
+          ADVANCED TECHNICAL SEO
+        </h3>
+        <div class="mb-4">
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 30%;"></div>
+          </div>
+        </div>
+        <p class="font-mono">Learning advanced crawl diagnostics, CWV fixes, and indexation workflows.</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-6 rounded-lg">
+        <h3 class="text-3xl font-bebas text-black mb-4 flex items-center">
+          <span class="text-4xl mr-3">🟢</span>
+          FORECASTING
+        </h3>
+        <div class="mb-4">
+          <div class="skill-meter h-4 rounded-full">
+            <div class="skill-progress" style="width: 25%;"></div>
+          </div>
+        </div>
+        <p class="font-mono">Building stronger forecasting models and better channel focus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fun Achievement Section -->
+  <section class="neo-brutalist bg-gradient-to-r from-yellow-300 to-orange-300 p-8 rounded-xl">
+    <h2 class="text-5xl font-bebas text-center text-black mb-8">EPIC ACHIEVEMENTS</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center">
+        <div class="text-4xl mb-2">🏆</div>
+        <h4 class="font-bold text-lg">Bug Hunter</h4>
+        <p class="text-sm font-mono">Fixed 47 bugs without crying</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center">
+        <div class="text-4xl mb-2">🎯</div>
+        <h4 class="font-bold text-lg">Pixel Perfect</h4>
+        <p class="text-sm font-mono">Made a div center perfectly</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center">
+        <div class="text-4xl mb-2">⚡</div>
+        <h4 class="font-bold text-lg">Insight Sprinter</h4>
+        <p class="text-sm font-mono">Built weekly SEO reports before lunch</p>
+      </div>
+      
+      <div class="neo-brutalist bg-white p-4 rounded-lg text-center">
+        <div class="text-4xl mb-2">🎨</div>
+        <h4 class="font-bold text-lg">Design Guru</h4>
+        <p class="text-sm font-mono">Added filter to my Whatsapp profile</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Bottom Marquee -->
+<div class="w-full bg-black text-yellow-400 overflow-hidden mt-8">
+  <marquee behavior="scroll" direction="right" scrollamount="4" style="font-family: 'Consolas', 'Courier New', monospace; font-size: 2.5rem; font-weight: 900; letter-spacing: 3px; padding: 12px 0;">
+    🔥 SKILLS LOADING... 100% COMPLETE! 🔥 READY TO SCALE ORGANIC GROWTH! 📈 SEO + DATA = SMART DECISIONS! 🚀
+  </marquee>
+</div>
+
+<!-- Back to Home Button -->
+<div class="text-center py-8">
+  <a href="home.html" class="inline-block neo-brutalist bg-purple-400 text-black px-8 py-4 text-xl font-bebas hover:bg-black hover:text-purple-400 transition-all duration-300 transform hover:scale-105 hover:-rotate-2 rounded-lg border-4 border-black">
+    🏠 BACK TO HOME 🏠
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="w-full text-center py-6 bg-black text-yellow-400 font-mono text-lg">
+  &copy; 2026 Mudit Ratre | Skills Showcase | Powered by <span class="text-red-500">&#10084;</span> and determination
+</footer>
+
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+
+<!-- Floating Quick Navigation Widget -->
+<div id="quickNav" class="fixed bottom-4 right-4 z-50 hidden md:block">
+  <div class="neo-brutalist bg-black text-yellow-400 p-3 rounded-lg shadow-2xl">
+    <h3 class="font-bebas text-sm mb-2 text-center">QUICK NAV</h3>
+    <div class="flex flex-col gap-2">
+      <a href="home.html" class="text-xs px-3 py-1 bg-gray-400 text-black rounded hover:bg-white transition-all">HOME</a>
+      <a href="about.html" class="text-xs px-3 py-1 bg-blue-400 text-black rounded hover:bg-white transition-all">ABOUT</a>
+      <a href="skills.html" class="text-xs px-3 py-1 bg-white text-black rounded border-2 border-purple-400 font-bold">SKILLS</a>
+      <a href="projects.html" class="text-xs px-3 py-1 bg-yellow-400 text-black rounded hover:bg-white transition-all">PROJECTS</a>
+      <a href="contact.html" class="text-xs px-3 py-1 bg-green-400 text-black rounded hover:bg-white transition-all">CONTACT</a>
+      <a href="Resume.pdf" download class="text-xs px-3 py-1 bg-red-400 text-black rounded hover:bg-white transition-all font-bold">RESUME</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

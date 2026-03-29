@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Link Test</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #f3f4f6;
+            padding: 20px;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border: 4px solid black;
+            border-radius: 15px;
+            box-shadow: 8px 8px 0 black;
+        }
+        .test-link {
+            display: block;
+            margin: 10px 0;
+            padding: 15px;
+            background: #fbbf24;
+            color: black;
+            text-decoration: none;
+            border: 3px solid black;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .test-link:hover {
+            background: black;
+            color: #fbbf24;
+            transform: scale(1.05);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        .status {
+            background: #10b981;
+            color: white;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+        }
+        /* Floating Quick Navigation Widget Styles */
+        #quickNav {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            z-index: 50;
+            display: none;
+        }
+        #quickNav .neo-brutalist {
+            background: black;
+            color: #fbbf24;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #quickNav h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        #quickNav a {
+            font-size: 0.875rem;
+            padding: 0.5rem;
+            background: #fbbf24;
+            color: black;
+            border-radius: 0.25rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        #quickNav a:hover {
+            background: black;
+            color: #fbbf24;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🚀 WEBSITE LINK TEST 🚀</h1>
+        <div class="status">✅ All pages are ready for testing!</div>
+        
+        <a href="home.html" class="test-link">🏠 Test Home Page (home.html)</a>
+        <a href="about.html" class="test-link">👤 Test About Page (about.html)</a>
+        <a href="skills.html" class="test-link">🛠️ Test Skills Page (skills.html)</a>
+        <a href="projects.html" class="test-link">💻 Test Projects Page (projects.html)</a>
+        <a href="contact.html" class="test-link">📧 Test Contact Page (contact.html)</a>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #e5e7eb; border-radius: 10px;">
+            <h3>Test Checklist:</h3>
+            <ul style="line-height: 1.8;">
+                <li>✅ Navigation bar on each page</li>
+                <li>✅ Inter-page linking works</li>
+                <li>✅ Back to Home buttons added</li>
+                <li>✅ View All buttons on homepage</li>
+                <li>✅ Responsive design</li>
+                <li>✅ Neo-brutalist styling</li>
+                <li>✅ GSAP animations</li>
+                <li>✅ Contact form functionality</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Floating Quick Navigation Widget -->
+    <div id="quickNav" class="fixed bottom-4 right-4 z-50 hidden md:block">
+        <div class="neo-brutalist bg-black text-yellow-400 p-3 rounded-lg shadow-2xl">
+            <h3 class="font-bebas text-sm mb-2 text-center">QUICK NAV</h3>
+            <div class="flex flex-col gap-2">
+                <a href="home.html" class="text-xs px-3 py-1 bg-gray-400 text-black rounded hover:bg-white transition-all">HOME</a>
+                <a href="about.html" class="text-xs px-3 py-1 bg-blue-400 text-black rounded hover:bg-white transition-all">ABOUT</a>
+                <a href="skills.html" class="text-xs px-3 py-1 bg-purple-400 text-black rounded hover:bg-white transition-all">SKILLS</a>
+                <a href="projects.html" class="text-xs px-3 py-1 bg-yellow-400 text-black rounded hover:bg-white transition-all">PROJECTS</a>
+                <a href="contact.html" class="text-xs px-3 py-1 bg-green-400 text-black rounded hover:bg-white transition-all">CONTACT</a>
+                <a href="Resume.pdf" download class="text-xs px-3 py-1 bg-red-400 text-black rounded hover:bg-white transition-all font-bold">RESUME</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
